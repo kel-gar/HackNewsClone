@@ -11,7 +11,7 @@ fetch(url)
   body.appendChild(newsList);
   results.map(news => {
     let newsItem = document.createElement("li");
-    newsItem.innerHTML = '<a href="' + news.href + '">' + news.title + "</a>";
+    newsItem.innerHTML = '<a href="' + news.url + '">' + news.title + "</a>";
     newsList.appendChild(newsItem);
   });
 })
